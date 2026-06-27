@@ -1,4 +1,4 @@
-.container {
+.container-heder {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,8 +29,7 @@ h3{
     color: #005482;
     border-radius: 100px;
     border: none;
-    width: 200px;
-    height: 100px;
+    padding: 10px 20px;
     font-size: 20px;
 
     
@@ -57,7 +56,7 @@ width: 128px;
 main{
     background-color: #E8F2F9;
 }
-.h33{
+.DS{
     font-weight: 700;
 }
 button p{
@@ -65,8 +64,22 @@ button p{
 }
 .fish{
     width: 30%;
+
+}
+.fish.active{
+    border-color: #1572A9;
+    border-width: 3px;
+    border-style: solid;
 }
 .fish-button{
     padding: 24px 126px 68px 126px;
-    border-radius: 70px;
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
 }
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
