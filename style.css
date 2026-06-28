@@ -38,6 +38,8 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 button img{
 border-color: #DFEAF1;
@@ -45,7 +47,7 @@ border-radius: 500px;
 width: 128px;
 }
 .fish-button button{
-    padding: 24px 126px 68px 126px;
+    padding: 24px;
     border-radius: 70px;
     border-width: 3px;
     background-color: #FFFFFF;
@@ -63,7 +65,7 @@ button p{
     font-weight: 500;
 }
 .fish{
-    width: 30%;
+    width: 32%;
 
 }
 .fish.active{
@@ -72,10 +74,10 @@ button p{
     border-style: solid;
 }
 .fish-button{
-    padding: 24px 126px 68px 126px;
-display: flex;
-flex-wrap: wrap;
-gap: 20px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 body{
     margin: 0;
