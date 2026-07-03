@@ -82,6 +82,9 @@ let depthInfo = document.querySelector(".depth-info")
 
 button1.onclick = function () {
     button1.classList.toggle('active');
+    button2.classList.remove('active');
+    button3.classList.remove('active');
+    button4.classList.remove('active');
     depthTemp.innerHTML = "🌡️Temp: 24°C";
     depthTitle.innerHTML = "The Sunlit Surface";
     depthDescription.innerHTML = "The epipelagic zone receives ample sunlight, fueling photosynthesis and supporting the majority of ocean life, including playful dolphins andcoastal crabs.";
@@ -91,7 +94,10 @@ button1.onclick = function () {
     depthInfo.style.color = "#005482";
 }
 button2.onclick = function () {
-    button2.classList.toggle('active');
+    button2.classList.add('active');
+    button1.classList.remove('active');
+    button3.classList.remove('active');
+    button4.classList.remove('active');
     depthTemp.innerHTML = "🌡️Temp: 8°C";
     depthTitle.innerHTML = "The Twilight Zone";
     depthDescription.innerHTML = "Sunlight rapidly fades in the mesopelagic zone. Bioluminescence begins to appear as glowing jellyfish and squid navigate the dim, cool waters.";
@@ -101,7 +107,10 @@ button2.onclick = function () {
     depthInfo.style.color = "#005482";
 }
 button3.onclick = function () {
-    button3.classList.toggle('active');
+    button3.classList.add('active');
+    button1.classList.remove('active');
+    button2.classList.remove('active');
+    button4.classList.remove('active');
     depthTemp.innerHTML = "🌡️Temp: 2°C";
     depthTitle.innerHTML = "The Abyss";
     depthDescription.innerHTML = "Complete darkness and immense pressure characterize the bathypelagic zone. Strange creatures like the Anglerfish use bioluminescent lures to survive.";
@@ -111,7 +120,10 @@ button3.onclick = function () {
     depthInfo.style.color = "#FFFFFF";
 }
 button4.onclick = function () {
-    button4.classList.toggle('active');
+    button4.classList.add('active');
+    button1.classList.remove('active');
+    button2.classList.remove('active');
+    button3.classList.remove('active');
     depthTemp.innerHTML = "🌡️Temp: 1°C";
     depthTitle.innerHTML = "The Mariana Trench";
     depthDescription.innerHTML = "The hadalpelagic zone, the deepest trenches on Earth. Pitch black and near-freezing, home to highly specialized life forms like pale snailfish.";
