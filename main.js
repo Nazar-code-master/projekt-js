@@ -81,7 +81,7 @@ let depthTemp = document.querySelector(".depth-temp")
 let depthInfo = document.querySelector(".depth-info")
 
 button1.onclick = function () {
-    button1.classList.toggle('active');
+    button1.classList.add('active');
     button2.classList.remove('active');
     button3.classList.remove('active');
     button4.classList.remove('active');
